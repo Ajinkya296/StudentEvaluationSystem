@@ -76,7 +76,28 @@ public class Frame2
 		lblGrading.setFont(new Font("Arial Black", Font.PLAIN, 14));
 		lblGrading.setBounds(10, 65, 120, 25);
 		frame.getContentPane().add(lblGrading);
+		
 
+		JLabel lblProfessionalism = new JLabel("Professionalism\t");
+		lblProfessionalism.setBounds(228, 65, 98, 31);
+		frame.getContentPane().add(lblProfessionalism);
+		
+		JLabel lblMeetingParticipation = new JLabel("Meeting");
+		lblMeetingParticipation.setBounds(330, 60, 85, 31);
+		frame.getContentPane().add(lblMeetingParticipation);
+		
+		JLabel lblParicipation = new JLabel("Paricipation");
+		lblParicipation.setBounds(330, 75, 85, 25);
+		frame.getContentPane().add(lblParicipation);
+		
+		JLabel lblWork = new JLabel("Work");
+		lblWork.setBounds(410, 60, 85, 31);
+		frame.getContentPane().add(lblWork);
+		
+		JLabel lblEvaluation = new JLabel("Evaluation");
+		lblEvaluation.setBounds(410, 75, 85, 25);
+		frame.getContentPane().add(lblEvaluation);
+		
 		if(team == 3)
 		{
 			JLabel lblNewLabel_1 = new JLabel("Enter Scores for Yourself");
@@ -84,17 +105,20 @@ public class Frame2
 			frame.getContentPane().add(lblNewLabel_1);
 		
 			JSpinner spinner211 = new JSpinner();
-			spinner211.setModel(new SpinnerNumberModel(0, 0, 5, 1));
+			if(flag) {spinner211.setModel(new SpinnerNumberModel(random(), 0, 5, 1));}
+			else {spinner211.setModel(new SpinnerNumberModel(0, 0, 5, 1));}
 			spinner211.setBounds(272, 100, 29, 20);
 			frame.getContentPane().add(spinner211);
 			
 			JSpinner spinner212 = new JSpinner();
-			spinner212.setModel(new SpinnerNumberModel(0, 0, 5, 1));
+			if(flag) {spinner212.setModel(new SpinnerNumberModel(random(), 0, 5, 1));}
+			else {spinner212.setModel(new SpinnerNumberModel(0, 0, 5, 1));}
 			spinner212.setBounds(350, 100, 29, 20);
 			frame.getContentPane().add(spinner212);
 			
 			JSpinner spinner213 = new JSpinner();
-			spinner213.setModel(new SpinnerNumberModel(0, 0, 5, 1));
+			if(flag) {spinner213.setModel(new SpinnerNumberModel(random(), 0, 5, 1));}
+			else {spinner213.setModel(new SpinnerNumberModel(0, 0, 5, 1));}
 			spinner213.setBounds(417, 100, 29, 20);
 			frame.getContentPane().add(spinner213);
 			
@@ -103,17 +127,20 @@ public class Frame2
 			frame.getContentPane().add(lblNewLabel_2);
 			
 			JSpinner spinner221 = new JSpinner();
-			spinner221.setModel(new SpinnerNumberModel(0, 0, 5, 1));
+			if(flag) {spinner221.setModel(new SpinnerNumberModel(random(), 0, 5, 1));}
+			else {spinner221.setModel(new SpinnerNumberModel(0, 0, 5, 1));}
 			spinner221.setBounds(272, 136, 29, 20);
 			frame.getContentPane().add(spinner221);
 			
 			JSpinner spinner222 = new JSpinner();
-			spinner222.setModel(new SpinnerNumberModel(0, 0, 5, 1));
+			if(flag) {spinner222.setModel(new SpinnerNumberModel(random(), 0, 5, 1));}
+			else {spinner222.setModel(new SpinnerNumberModel(0, 0, 5, 1));}
 			spinner222.setBounds(350, 136, 29, 20);
 			frame.getContentPane().add(spinner222);
 			
 			JSpinner spinner223 = new JSpinner();
-			spinner223.setModel(new SpinnerNumberModel(0, 0, 5, 1));
+			if(flag) {spinner223.setModel(new SpinnerNumberModel(random(), 0, 5, 1));}
+			else {spinner223.setModel(new SpinnerNumberModel(0, 0, 5, 1));}
 			spinner223.setBounds(417, 136, 29, 20);
 			frame.getContentPane().add(spinner223);
 
@@ -122,17 +149,20 @@ public class Frame2
 			frame.getContentPane().add(lblNewLabel_3);
 		
 			JSpinner spinner231 = new JSpinner();
-			spinner231.setModel(new SpinnerNumberModel(0, 0, 5, 1));
+			if(flag) {spinner231.setModel(new SpinnerNumberModel(random(), 0, 5, 1));}
+			else {spinner231.setModel(new SpinnerNumberModel(0, 0, 5, 1));}
 			spinner231.setBounds(272, 172, 29, 20);
 			frame.getContentPane().add(spinner231);
 			
 			JSpinner spinner232 = new JSpinner();
-			spinner232.setModel(new SpinnerNumberModel(0, 0, 5, 1));
+			if(flag) {spinner232.setModel(new SpinnerNumberModel(random(), 0, 5, 1));}
+			else {spinner232.setModel(new SpinnerNumberModel(0, 0, 5, 1));}
 			spinner232.setBounds(350, 172, 29, 20);
 			frame.getContentPane().add(spinner232);
 			
 			JSpinner spinner233 = new JSpinner();
-			spinner233.setModel(new SpinnerNumberModel(0, 0, 5, 1));
+			if(flag) {spinner233.setModel(new SpinnerNumberModel(random(), 0, 5, 1));}
+			else {spinner233.setModel(new SpinnerNumberModel(0, 0, 5, 1));}
 			spinner233.setBounds(417, 172, 29, 20);
 			frame.getContentPane().add(spinner233);
 		}
@@ -143,17 +173,20 @@ public class Frame2
 			frame.getContentPane().add(lblNewLabel_1);
 		
 			JSpinner spinner211 = new JSpinner();
-			spinner211.setModel(new SpinnerNumberModel(0, 0, 5, 1));
+			if(flag) {spinner211.setModel(new SpinnerNumberModel(random(), 0, 5, 1));}
+			else {spinner211.setModel(new SpinnerNumberModel(0, 0, 5, 1));}
 			spinner211.setBounds(272, 100, 29, 20);
 			frame.getContentPane().add(spinner211);
 			
 			JSpinner spinner212 = new JSpinner();
-			spinner212.setModel(new SpinnerNumberModel(0, 0, 5, 1));
+			if(flag) {spinner212.setModel(new SpinnerNumberModel(random(), 0, 5, 1));}
+			else {spinner212.setModel(new SpinnerNumberModel(0, 0, 5, 1));}
 			spinner212.setBounds(350, 100, 29, 20);
 			frame.getContentPane().add(spinner212);
 			
 			JSpinner spinner213 = new JSpinner();
-			spinner213.setModel(new SpinnerNumberModel(0, 0, 5, 1));
+			if(flag) {spinner213.setModel(new SpinnerNumberModel(random(), 0, 5, 1));}
+			else {spinner213.setModel(new SpinnerNumberModel(0, 0, 5, 1));}
 			spinner213.setBounds(417, 100, 29, 20);
 			frame.getContentPane().add(spinner213);
 			
@@ -162,17 +195,20 @@ public class Frame2
 			frame.getContentPane().add(lblNewLabel_2);
 			
 			JSpinner spinner221 = new JSpinner();
-			spinner221.setModel(new SpinnerNumberModel(0, 0, 5, 1));
+			if(flag) {spinner221.setModel(new SpinnerNumberModel(random(), 0, 5, 1));}
+			else {spinner221.setModel(new SpinnerNumberModel(0, 0, 5, 1));}
 			spinner221.setBounds(272, 136, 29, 20);
 			frame.getContentPane().add(spinner221);
 			
 			JSpinner spinner222 = new JSpinner();
-			spinner222.setModel(new SpinnerNumberModel(0, 0, 5, 1));
+			if(flag) {spinner222.setModel(new SpinnerNumberModel(random(), 0, 5, 1));}
+			else {spinner222.setModel(new SpinnerNumberModel(0, 0, 5, 1));}
 			spinner222.setBounds(350, 136, 29, 20);
 			frame.getContentPane().add(spinner222);
 			
 			JSpinner spinner223 = new JSpinner();
-			spinner223.setModel(new SpinnerNumberModel(0, 0, 5, 1));
+			if(flag) {spinner223.setModel(new SpinnerNumberModel(random(), 0, 5, 1));}
+			else {spinner223.setModel(new SpinnerNumberModel(0, 0, 5, 1));}
 			spinner223.setBounds(417, 136, 29, 20);
 			frame.getContentPane().add(spinner223);
 
@@ -181,17 +217,20 @@ public class Frame2
 			frame.getContentPane().add(lblNewLabel_3);
 		
 			JSpinner spinner231 = new JSpinner();
-			spinner231.setModel(new SpinnerNumberModel(0, 0, 5, 1));
+			if(flag) {spinner231.setModel(new SpinnerNumberModel(random(), 0, 5, 1));}
+			else {spinner231.setModel(new SpinnerNumberModel(0, 0, 5, 1));}
 			spinner231.setBounds(272, 172, 29, 20);
 			frame.getContentPane().add(spinner231);
 			
 			JSpinner spinner232 = new JSpinner();
-			spinner232.setModel(new SpinnerNumberModel(0, 0, 5, 1));
+			if(flag) {spinner232.setModel(new SpinnerNumberModel(random(), 0, 5, 1));}
+			else {spinner232.setModel(new SpinnerNumberModel(0, 0, 5, 1));}
 			spinner232.setBounds(350, 172, 29, 20);
 			frame.getContentPane().add(spinner232);
 			
 			JSpinner spinner233 = new JSpinner();
-			spinner233.setModel(new SpinnerNumberModel(0, 0, 5, 1));
+			if(flag) {spinner233.setModel(new SpinnerNumberModel(random(), 0, 5, 1));}
+			else {spinner233.setModel(new SpinnerNumberModel(0, 0, 5, 1));}
 			spinner233.setBounds(417, 172, 29, 20);
 			frame.getContentPane().add(spinner233);
 			
@@ -200,17 +239,20 @@ public class Frame2
 			frame.getContentPane().add(lblNewLabel_4);
 		
 			JSpinner spinner241 = new JSpinner();
-			spinner241.setModel(new SpinnerNumberModel(0, 0, 5, 1));
+			if(flag) {spinner241.setModel(new SpinnerNumberModel(random(), 0, 5, 1));}
+			else {spinner241.setModel(new SpinnerNumberModel(0, 0, 5, 1));}
 			spinner241.setBounds(272, 208, 29, 20);
 			frame.getContentPane().add(spinner241);
 			
 			JSpinner spinner242 = new JSpinner();
-			spinner242.setModel(new SpinnerNumberModel(0, 0, 5, 1));
+			if(flag) {spinner242.setModel(new SpinnerNumberModel(random(), 0, 5, 1));}
+			else {spinner242.setModel(new SpinnerNumberModel(0, 0, 5, 1));}
 			spinner242.setBounds(350, 208, 29, 20);
 			frame.getContentPane().add(spinner242);
 			
 			JSpinner spinner243 = new JSpinner();
-			spinner243.setModel(new SpinnerNumberModel(0, 0, 5, 1));
+			if(flag) {spinner243.setModel(new SpinnerNumberModel(random(), 0, 5, 1));}
+			else {spinner243.setModel(new SpinnerNumberModel(0, 0, 5, 1));}
 			spinner243.setBounds(417, 208, 29, 20);
 			frame.getContentPane().add(spinner243);
 		}
@@ -221,17 +263,20 @@ public class Frame2
 			frame.getContentPane().add(lblNewLabel_1);
 		
 			JSpinner spinner211 = new JSpinner();
-			spinner211.setModel(new SpinnerNumberModel(0, 0, 5, 1));
+			if(flag) {spinner211.setModel(new SpinnerNumberModel(random(), 0, 5, 1));}
+			else {spinner211.setModel(new SpinnerNumberModel(0, 0, 5, 1));}
 			spinner211.setBounds(272, 100, 29, 20);
 			frame.getContentPane().add(spinner211);
 			
 			JSpinner spinner212 = new JSpinner();
-			spinner212.setModel(new SpinnerNumberModel(0, 0, 5, 1));
+			if(flag) {spinner212.setModel(new SpinnerNumberModel(random(), 0, 5, 1));}
+			else {spinner212.setModel(new SpinnerNumberModel(0, 0, 5, 1));}
 			spinner212.setBounds(350, 100, 29, 20);
 			frame.getContentPane().add(spinner212);
 			
 			JSpinner spinner213 = new JSpinner();
-			spinner213.setModel(new SpinnerNumberModel(0, 0, 5, 1));
+			if(flag) {spinner213.setModel(new SpinnerNumberModel(random(), 0, 5, 1));}
+			else {spinner213.setModel(new SpinnerNumberModel(0, 0, 5, 1));}
 			spinner213.setBounds(417, 100, 29, 20);
 			frame.getContentPane().add(spinner213);
 			
@@ -240,17 +285,20 @@ public class Frame2
 			frame.getContentPane().add(lblNewLabel_2);
 			
 			JSpinner spinner221 = new JSpinner();
-			spinner221.setModel(new SpinnerNumberModel(0, 0, 5, 1));
+			if(flag) {spinner221.setModel(new SpinnerNumberModel(random(), 0, 5, 1));}
+			else {spinner221.setModel(new SpinnerNumberModel(0, 0, 5, 1));}
 			spinner221.setBounds(272, 136, 29, 20);
 			frame.getContentPane().add(spinner221);
 			
 			JSpinner spinner222 = new JSpinner();
-			spinner222.setModel(new SpinnerNumberModel(0, 0, 5, 1));
+			if(flag) {spinner222.setModel(new SpinnerNumberModel(random(), 0, 5, 1));}
+			else {spinner222.setModel(new SpinnerNumberModel(0, 0, 5, 1));}
 			spinner222.setBounds(350, 136, 29, 20);
 			frame.getContentPane().add(spinner222);
 			
 			JSpinner spinner223 = new JSpinner();
-			spinner223.setModel(new SpinnerNumberModel(0, 0, 5, 1));
+			if(flag) {spinner223.setModel(new SpinnerNumberModel(random(), 0, 5, 1));}
+			else {spinner223.setModel(new SpinnerNumberModel(0, 0, 5, 1));}
 			spinner223.setBounds(417, 136, 29, 20);
 			frame.getContentPane().add(spinner223);
 
@@ -259,17 +307,20 @@ public class Frame2
 			frame.getContentPane().add(lblNewLabel_3);
 		
 			JSpinner spinner231 = new JSpinner();
-			spinner231.setModel(new SpinnerNumberModel(0, 0, 5, 1));
+			if(flag) {spinner231.setModel(new SpinnerNumberModel(random(), 0, 5, 1));}
+			else {spinner231.setModel(new SpinnerNumberModel(0, 0, 5, 1));}
 			spinner231.setBounds(272, 172, 29, 20);
 			frame.getContentPane().add(spinner231);
 			
 			JSpinner spinner232 = new JSpinner();
-			spinner232.setModel(new SpinnerNumberModel(0, 0, 5, 1));
+			if(flag) {spinner232.setModel(new SpinnerNumberModel(random(), 0, 5, 1));}
+			else {spinner232.setModel(new SpinnerNumberModel(0, 0, 5, 1));}
 			spinner232.setBounds(350, 172, 29, 20);
 			frame.getContentPane().add(spinner232);
 			
 			JSpinner spinner233 = new JSpinner();
-			spinner233.setModel(new SpinnerNumberModel(0, 0, 5, 1));
+			if(flag) {spinner233.setModel(new SpinnerNumberModel(random(), 0, 5, 1));}
+			else {spinner233.setModel(new SpinnerNumberModel(0, 0, 5, 1));}
 			spinner233.setBounds(417, 172, 29, 20);
 			frame.getContentPane().add(spinner233);
 			
@@ -278,17 +329,20 @@ public class Frame2
 			frame.getContentPane().add(lblNewLabel_4);
 		
 			JSpinner spinner241 = new JSpinner();
-			spinner241.setModel(new SpinnerNumberModel(0, 0, 5, 1));
+			if(flag) {spinner241.setModel(new SpinnerNumberModel(random(), 0, 5, 1));}
+			else {spinner241.setModel(new SpinnerNumberModel(0, 0, 5, 1));}
 			spinner241.setBounds(272, 208, 29, 20);
 			frame.getContentPane().add(spinner241);
 			
 			JSpinner spinner242 = new JSpinner();
-			spinner242.setModel(new SpinnerNumberModel(0, 0, 5, 1));
+			if(flag) {spinner242.setModel(new SpinnerNumberModel(random(), 0, 5, 1));}
+			else {spinner242.setModel(new SpinnerNumberModel(0, 0, 5, 1));}
 			spinner242.setBounds(350, 208, 29, 20);
 			frame.getContentPane().add(spinner242);
 			
 			JSpinner spinner243 = new JSpinner();
-			spinner243.setModel(new SpinnerNumberModel(0, 0, 5, 1));
+			if(flag) {spinner243.setModel(new SpinnerNumberModel(random(), 0, 5, 1));}
+			else {spinner243.setModel(new SpinnerNumberModel(0, 0, 5, 1));}
 			spinner243.setBounds(417, 208, 29, 20);
 			frame.getContentPane().add(spinner243);
 			
@@ -297,17 +351,20 @@ public class Frame2
 			frame.getContentPane().add(lblNewLabel_5);
 		
 			JSpinner spinner251 = new JSpinner();
-			spinner251.setModel(new SpinnerNumberModel(0, 0, 5, 1));
+			if(flag) {spinner251.setModel(new SpinnerNumberModel(random(), 0, 5, 1));}
+			else {spinner251.setModel(new SpinnerNumberModel(0, 0, 5, 1));}
 			spinner251.setBounds(272, 244, 29, 20);
 			frame.getContentPane().add(spinner251);
 			
 			JSpinner spinner252 = new JSpinner();
-			spinner252.setModel(new SpinnerNumberModel(0, 0, 5, 1));
+			if(flag) {spinner252.setModel(new SpinnerNumberModel(random(), 0, 5, 1));}
+			else {spinner252.setModel(new SpinnerNumberModel(0, 0, 5, 1));}
 			spinner252.setBounds(350, 244, 29, 20);
 			frame.getContentPane().add(spinner252);
 			
 			JSpinner spinner253 = new JSpinner();
-			spinner253.setModel(new SpinnerNumberModel(0, 0, 5, 1));
+			if(flag) {spinner253.setModel(new SpinnerNumberModel(random(), 0, 5, 1));}
+			else {spinner253.setModel(new SpinnerNumberModel(0, 0, 5, 1));}
 			spinner253.setBounds(417, 244, 29, 20);
 			frame.getContentPane().add(spinner253);
 		}
@@ -318,17 +375,20 @@ public class Frame2
 		frame.getContentPane().add(lblNewLabel_1);
 	
 		JSpinner spinner211 = new JSpinner();
-		spinner211.setModel(new SpinnerNumberModel(0, 0, 5, 1));
+		if(flag) {spinner211.setModel(new SpinnerNumberModel(random(), 0, 5, 1));}
+		else {spinner211.setModel(new SpinnerNumberModel(0, 0, 5, 1));}
 		spinner211.setBounds(272, 100, 29, 20);
 		frame.getContentPane().add(spinner211);
 		
 		JSpinner spinner212 = new JSpinner();
-		spinner212.setModel(new SpinnerNumberModel(0, 0, 5, 1));
+		if(flag) {spinner212.setModel(new SpinnerNumberModel(random(), 0, 5, 1));}
+		else {spinner212.setModel(new SpinnerNumberModel(0, 0, 5, 1));}
 		spinner212.setBounds(350, 100, 29, 20);
 		frame.getContentPane().add(spinner212);
 		
 		JSpinner spinner213 = new JSpinner();
-		spinner213.setModel(new SpinnerNumberModel(0, 0, 5, 1));
+		if(flag) {spinner213.setModel(new SpinnerNumberModel(random(), 0, 5, 1));}
+		else {spinner213.setModel(new SpinnerNumberModel(0, 0, 5, 1));}
 		spinner213.setBounds(417, 100, 29, 20);
 		frame.getContentPane().add(spinner213);
 		
@@ -337,17 +397,20 @@ public class Frame2
 		frame.getContentPane().add(lblNewLabel_2);
 		
 		JSpinner spinner221 = new JSpinner();
-		spinner221.setModel(new SpinnerNumberModel(0, 0, 5, 1));
+		if(flag) {spinner221.setModel(new SpinnerNumberModel(random(), 0, 5, 1));}
+		else {spinner221.setModel(new SpinnerNumberModel(0, 0, 5, 1));}
 		spinner221.setBounds(272, 136, 29, 20);
 		frame.getContentPane().add(spinner221);
 		
 		JSpinner spinner222 = new JSpinner();
-		spinner222.setModel(new SpinnerNumberModel(0, 0, 5, 1));
+		if(flag) {spinner222.setModel(new SpinnerNumberModel(random(), 0, 5, 1));}
+		else {spinner222.setModel(new SpinnerNumberModel(0, 0, 5, 1));}
 		spinner222.setBounds(350, 136, 29, 20);
 		frame.getContentPane().add(spinner222);
 		
 		JSpinner spinner223 = new JSpinner();
-		spinner223.setModel(new SpinnerNumberModel(0, 0, 5, 1));
+		if(flag) {spinner223.setModel(new SpinnerNumberModel(random(), 0, 5, 1));}
+		else {spinner223.setModel(new SpinnerNumberModel(0, 0, 5, 1));}
 		spinner223.setBounds(417, 136, 29, 20);
 		frame.getContentPane().add(spinner223);
 
@@ -356,17 +419,20 @@ public class Frame2
 		frame.getContentPane().add(lblNewLabel_3);
 	
 		JSpinner spinner231 = new JSpinner();
-		spinner231.setModel(new SpinnerNumberModel(0, 0, 5, 1));
+		if(flag) {spinner231.setModel(new SpinnerNumberModel(random(), 0, 5, 1));}
+		else {spinner231.setModel(new SpinnerNumberModel(0, 0, 5, 1));}
 		spinner231.setBounds(272, 172, 29, 20);
 		frame.getContentPane().add(spinner231);
 		
 		JSpinner spinner232 = new JSpinner();
-		spinner232.setModel(new SpinnerNumberModel(0, 0, 5, 1));
+		if(flag) {spinner232.setModel(new SpinnerNumberModel(random(), 0, 5, 1));}
+		else {spinner232.setModel(new SpinnerNumberModel(0, 0, 5, 1));}
 		spinner232.setBounds(350, 172, 29, 20);
 		frame.getContentPane().add(spinner232);
 		
 		JSpinner spinner233 = new JSpinner();
-		spinner233.setModel(new SpinnerNumberModel(0, 0, 5, 1));
+		if(flag) {spinner233.setModel(new SpinnerNumberModel(random(), 0, 5, 1));}
+		else {spinner233.setModel(new SpinnerNumberModel(0, 0, 5, 1));}
 		spinner233.setBounds(417, 172, 29, 20);
 		frame.getContentPane().add(spinner233);
 		
@@ -375,17 +441,20 @@ public class Frame2
 		frame.getContentPane().add(lblNewLabel_4);
 	
 		JSpinner spinner241 = new JSpinner();
-		spinner241.setModel(new SpinnerNumberModel(0, 0, 5, 1));
+		if(flag) {spinner241.setModel(new SpinnerNumberModel(random(), 0, 5, 1));}
+		else {spinner241.setModel(new SpinnerNumberModel(0, 0, 5, 1));}
 		spinner241.setBounds(272, 208, 29, 20);
 		frame.getContentPane().add(spinner241);
 		
 		JSpinner spinner242 = new JSpinner();
-		spinner242.setModel(new SpinnerNumberModel(0, 0, 5, 1));
+		if(flag) {spinner242.setModel(new SpinnerNumberModel(random(), 0, 5, 1));}
+		else {spinner242.setModel(new SpinnerNumberModel(0, 0, 5, 1));}
 		spinner242.setBounds(350, 208, 29, 20);
 		frame.getContentPane().add(spinner242);
 		
 		JSpinner spinner243 = new JSpinner();
-		spinner243.setModel(new SpinnerNumberModel(0, 0, 5, 1));
+		if(flag) {spinner243.setModel(new SpinnerNumberModel(random(), 0, 5, 1));}
+		else {spinner243.setModel(new SpinnerNumberModel(0, 0, 5, 1));}
 		spinner243.setBounds(417, 208, 29, 20);
 		frame.getContentPane().add(spinner243);
 		
@@ -394,17 +463,20 @@ public class Frame2
 		frame.getContentPane().add(lblNewLabel_5);
 	
 		JSpinner spinner251 = new JSpinner();
-		spinner251.setModel(new SpinnerNumberModel(0, 0, 5, 1));
+		if(flag) {spinner251.setModel(new SpinnerNumberModel(random(), 0, 5, 1));}
+		else {spinner251.setModel(new SpinnerNumberModel(0, 0, 5, 1));}
 		spinner251.setBounds(272, 244, 29, 20);
 		frame.getContentPane().add(spinner251);
 		
 		JSpinner spinner252 = new JSpinner();
-		spinner252.setModel(new SpinnerNumberModel(0, 0, 5, 1));
+		if(flag) {spinner252.setModel(new SpinnerNumberModel(random(), 0, 5, 1));}
+		else {spinner252.setModel(new SpinnerNumberModel(0, 0, 5, 1));}
 		spinner252.setBounds(350, 244, 29, 20);
 		frame.getContentPane().add(spinner252);
 		
 		JSpinner spinner253 = new JSpinner();
-		spinner253.setModel(new SpinnerNumberModel(0, 0, 5, 1));
+		if(flag) {spinner253.setModel(new SpinnerNumberModel(random(), 0, 5, 1));}
+		else {spinner253.setModel(new SpinnerNumberModel(0, 0, 5, 1));}
 		spinner253.setBounds(417, 244, 29, 20);
 		frame.getContentPane().add(spinner253);
 		
@@ -454,26 +526,6 @@ public class Frame2
 		});
 		btnSubmit.setBounds(268, 325, 156, 31);
 		frame.getContentPane().add(btnSubmit);
-		
-		JLabel lblProfessionalism = new JLabel("Professionalism\t");
-		lblProfessionalism.setBounds(228, 65, 98, 31);
-		frame.getContentPane().add(lblProfessionalism);
-		
-		JLabel lblMeetingParticipation = new JLabel("Meeting");
-		lblMeetingParticipation.setBounds(330, 60, 85, 31);
-		frame.getContentPane().add(lblMeetingParticipation);
-		
-		JLabel lblParicipation = new JLabel("Paricipation");
-		lblParicipation.setBounds(330, 75, 85, 25);
-		frame.getContentPane().add(lblParicipation);
-		
-		JLabel lblWork = new JLabel("Work");
-		lblWork.setBounds(410, 60, 85, 31);
-		frame.getContentPane().add(lblWork);
-		
-		JLabel lblEvaluation = new JLabel("Evaluation");
-		lblEvaluation.setBounds(410, 75, 85, 25);
-		frame.getContentPane().add(lblEvaluation);
 		
 	}    
 }
