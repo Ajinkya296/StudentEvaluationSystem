@@ -17,7 +17,7 @@ import java.awt.event.ActionEvent;
 
 public class Frame1 
 {
-	JFrame frame;
+	static JFrame frame;
 
 	public static void main(String[] args) 
 	{
@@ -100,7 +100,9 @@ public class Frame1
 				
 				Frame2 link = new Frame2(TeamMembers,choice);
 				link.frame.setVisible(true);
-						
+				
+				Frame1.frame.setVisible(false);
+				
 			}
 		});
 		btnSubmit.setBounds(160, 293, 156, 31);

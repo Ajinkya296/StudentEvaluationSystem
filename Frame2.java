@@ -19,7 +19,7 @@ import java.util.*;
 
 public class Frame2 
 {
-	JFrame frame;
+	static JFrame frame;
     
 	public int team;
 	public boolean flag;
@@ -288,7 +288,8 @@ public class Frame2
 				
 				Frame1 link = new Frame1();
 				link.frame.setVisible(true);
-								
+				
+				Frame2.frame.setVisible(false);
 			}
 		});
 		btnBack.setBounds(60, 325, 156, 31);
@@ -319,6 +320,8 @@ public class Frame2
 				
 				Frame3 link = new Frame3(team,flag,list);
 				link.frame.setVisible(true);
+				
+				Frame2.frame.setVisible(false);
 								
 			}
 		});
