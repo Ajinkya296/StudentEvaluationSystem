@@ -55,10 +55,10 @@ public class Frame1
 		lblPleaseEnter.setBounds(90, 11, 335, 25);
 		frame.getContentPane().add(lblPleaseEnter);
 		
-		JLabel lblInitialization = new JLabel("1. Initialization");
-		lblInitialization.setFont(new Font("Arial Black", Font.PLAIN, 14));
-		lblInitialization.setBounds(10, 70, 120, 14);
-		frame.getContentPane().add(lblInitialization);
+		JLabel lblHomeScreen = new JLabel("1. Home Screen");
+		lblHomeScreen.setFont(new Font("Arial Black", Font.PLAIN, 14));
+		lblHomeScreen.setBounds(10, 70, 120, 14);
+		frame.getContentPane().add(lblHomeScreen);
 		
 		JLabel lblNewLabel = new JLabel("How many students are present in your team including yourself?");
 		lblNewLabel.setBounds(10, 120, 391, 25);
@@ -68,6 +68,7 @@ public class Frame1
 		spinner11.setModel(new SpinnerNumberModel(3, 3, 6, 1));
 		spinner11.setBounds(445, 122, 29, 20);
 		frame.getContentPane().add(spinner11);
+		spinner11.setEditor(new JSpinner.DefaultEditor(spinner11));
 		
 		JLabel lblNewLabel_1 = new JLabel("Have you previously entered scores for your team members?");
 		lblNewLabel_1.setBounds(10, 200, 355, 25);

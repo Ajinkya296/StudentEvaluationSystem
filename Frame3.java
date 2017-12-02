@@ -1,5 +1,4 @@
 import java.awt.EventQueue;
-
 import javax.swing.JFrame;
 import java.awt.FlowLayout;
 import javax.swing.JTextField;
@@ -15,37 +14,36 @@ import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
-public class Frame3 {
-
+public class Frame3 
+{
 	JFrame frame;
-
-	/**
-	 * Launch the application.
-	 */
-	public static void main(String[] args) {
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {
+	
+	public static void main(String[] args) 
+	{
+		EventQueue.invokeLater(new Runnable() 
+		{
+			public void run() 
+			{
+				try 
+				{
 					Frame3 window = new Frame3();
 					window.frame.setVisible(true);
-				} catch (Exception e) {
+				} 
+				catch (Exception e) 
+				{
 					e.printStackTrace();
 				}
 			}
 		});
 	}
 
-	/**
-	 * Create the application.
-	 */
-	public Frame3() {
+	public Frame3() 
+	{
 		initialize();
 	}
 
-	/**
-	 * Initialize the contents of the frame.
-	 */
-	private void initialize() {
+	private void initialize() 
+	{
 		frame = new JFrame();
 		frame.setBounds(100, 100, 500, 450);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -89,7 +87,7 @@ public class Frame3 {
 		btnBack.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				
-				Frame2_6 link = new Frame2_6();
+				Frame2 link = new Frame2();
 				link.frame.setVisible(true);
 								
 			}
@@ -106,7 +104,7 @@ public class Frame3 {
 		});
 		btnQuit.setBounds(268, 325, 156, 31);
 		frame.getContentPane().add(btnQuit);
-		
-					
- }
+	
+	}
+
 }
