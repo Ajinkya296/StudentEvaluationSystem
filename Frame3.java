@@ -61,39 +61,52 @@ public class Frame3 {
 		lblInitialization.setBounds(10, 70, 120, 14);
 		frame.getContentPane().add(lblInitialization);
 		
-		JLabel lblNewLabel = new JLabel("How many students are present in your team including yourself?");
-		lblNewLabel.setBounds(10, 120, 391, 25);
-		frame.getContentPane().add(lblNewLabel);
-		
-		JSpinner spinner11 = new JSpinner();
-		spinner11.setModel(new SpinnerNumberModel(3, 3, 6, 1));
-		spinner11.setBounds(445, 122, 29, 20);
-		frame.getContentPane().add(spinner11);
-		
-
-		JLabel lblNewLabel_1 = new JLabel("Have you previously entered scores for your team members?");
-		lblNewLabel_1.setBounds(10, 200, 355, 25);
+		JLabel lblNewLabel_1 = new JLabel("Your Score - ");
+		lblNewLabel_1.setBounds(10, 100, 233, 25);
 		frame.getContentPane().add(lblNewLabel_1);
 		
-		JRadioButton rdbtnYes = new JRadioButton(" Yes");
-		rdbtnYes.setBounds(371, 202, 54, 23);
-		frame.getContentPane().add(rdbtnYes);
+		JLabel lblNewLabel_2 = new JLabel("Brad Pitt Score - ");
+		lblNewLabel_2.setBounds(10, 136, 233, 25);
+		frame.getContentPane().add(lblNewLabel_2);
 		
-		JRadioButton rdbtnNo = new JRadioButton(" No");
-		rdbtnNo.setBounds(430, 202, 54, 23);
-		frame.getContentPane().add(rdbtnNo);
+		JLabel lblNewLabel_3 = new JLabel("Will Smith Score - ");
+		lblNewLabel_3.setBounds(10, 172, 233, 25);
+		frame.getContentPane().add(lblNewLabel_3);
 		
-		JButton btnSubmit = new JButton("SUBMIT");
-		btnSubmit.addActionListener(new ActionListener() {
+		JLabel lblNewLabel_4 = new JLabel("Jhonny Depp Score - ");
+		lblNewLabel_4.setBounds(10, 208, 233, 25);
+		frame.getContentPane().add(lblNewLabel_4);
+		
+		JLabel lblNewLabel_5 = new JLabel("Matt Damon Score - ");
+		lblNewLabel_5.setBounds(10, 244, 233, 25);
+		frame.getContentPane().add(lblNewLabel_5);
+		
+		JLabel lblNewLabel_6 = new JLabel("Tom Cruise Score - ");
+		lblNewLabel_6.setBounds(10, 280, 233, 25);
+		frame.getContentPane().add(lblNewLabel_6);
+		
+		JButton btnBack = new JButton("BACK");
+		btnBack.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				
-				Frame2 link = new Frame2();
+				Frame2_6 link = new Frame2_6();
 				link.frame.setVisible(true);
-					
+								
 			}
 		});
-		btnSubmit.setBounds(180, 285, 156, 31);
-		frame.getContentPane().add(btnSubmit);
+		btnBack.setBounds(60, 325, 156, 31);
+		frame.getContentPane().add(btnBack);
+		
+		JButton btnQuit = new JButton("Quit");
+		btnQuit.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
 				
+				System.exit(0);				
+			}
+		});
+		btnQuit.setBounds(268, 325, 156, 31);
+		frame.getContentPane().add(btnQuit);
+		
+					
  }
 }

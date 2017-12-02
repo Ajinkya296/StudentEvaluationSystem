@@ -1,53 +1,50 @@
 import java.awt.EventQueue;
-
 import javax.swing.JFrame;
-import java.awt.FlowLayout;
-import javax.swing.JTextField;
 import javax.swing.JSpinner;
 import javax.swing.SpinnerNumberModel;
 import javax.swing.JLabel;
 import java.awt.Font;
-import javax.swing.JTextPane;
-import javax.swing.JScrollBar;
 import javax.swing.JRadioButton;
-import javax.swing.SwingConstants;
 import javax.swing.JButton;
-import javax.swing.JComboBox;
-
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+//import java.awt.FlowLayout;
+//import javax.swing.JTextField;
+//import javax.swing.JTextPane;
+//import javax.swing.JScrollBar;
+//import javax.swing.SwingConstants;
+//import javax.swing.JComboBox;
 
-public class Frame1 {
-
+public class Frame1 
+{
 	JFrame frame;
 
-	/**
-	 * Launch the application.
-	 */
-	public static void main(String[] args) {
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {
+	public static void main(String[] args) 
+	{
+		EventQueue.invokeLater(new Runnable() 
+		{
+			public void run() 
+			{
+				try 
+				{
 					Frame1 window = new Frame1();
 					window.frame.setVisible(true);
-				} catch (Exception e) {
+				} 
+				catch (Exception e) 
+				{
 					e.printStackTrace();
 				}
 			}
 		});
 	}
 
-	/**
-	 * Create the application.
-	 */
-	public Frame1() {
+	public Frame1() 
+	{
 		initialize();
 	}
 
-	/**
-	 * Initialize the contents of the frame.
-	 */
-	private void initialize() {
+	private void initialize() 
+	{
 		frame = new JFrame();
 		frame.setBounds(100, 100, 500, 450);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -72,7 +69,6 @@ public class Frame1 {
 		spinner11.setBounds(445, 122, 29, 20);
 		frame.getContentPane().add(spinner11);
 		
-
 		JLabel lblNewLabel_1 = new JLabel("Have you previously entered scores for your team members?");
 		lblNewLabel_1.setBounds(10, 200, 355, 25);
 		frame.getContentPane().add(lblNewLabel_1);
@@ -88,14 +84,25 @@ public class Frame1 {
 		JButton btnSubmit = new JButton("NEXT");
 		btnSubmit.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
+
+				int TeamMembers = (int) spinner11.getValue();
+				boolean choice;
+
+				if(rdbtnYes.isSelected())
+				{
+					choice = true;
+		        }
+		        else
+		        {
+		        	choice = false;
+		        }
 				
-				Frame2 link = new Frame2();
+				Frame2 link = new Frame2(TeamMembers,choice);
 				link.frame.setVisible(true);
-					
+						
 			}
 		});
 		btnSubmit.setBounds(160, 293, 156, 31);
 		frame.getContentPane().add(btnSubmit);
-				
- }
+	}
 }

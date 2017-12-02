@@ -38,6 +38,7 @@ public class Frame2_6 {
 	/**
 	 * Create the application.
 	 */
+	
 	public Frame2_6() {
 		initialize();
 	}
