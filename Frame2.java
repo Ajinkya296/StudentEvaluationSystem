@@ -274,7 +274,7 @@ public class Frame2
 		btnSubmit.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				
-				Frame3 link = new Frame3();
+				Frame3 link = new Frame3(team);
 				link.frame.setVisible(true);
 								
 			}

@@ -18,6 +18,8 @@ public class Frame3
 {
 	JFrame frame;
 	
+	public int team;
+	
 	public static void main(String[] args) 
 	{
 		EventQueue.invokeLater(new Runnable() 
@@ -37,13 +39,21 @@ public class Frame3
 		});
 	}
 
+	public Frame3(int team) 
+	{
+		this.team = team;
+		initialize();
+	}
+	
 	public Frame3() 
 	{
 		initialize();
 	}
-
+	
 	private void initialize() 
 	{
+		int score = 0;
+		
 		frame = new JFrame();
 		frame.setBounds(100, 100, 500, 450);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -59,29 +69,39 @@ public class Frame3
 		lblInitialization.setBounds(10, 70, 120, 14);
 		frame.getContentPane().add(lblInitialization);
 		
-		JLabel lblNewLabel_1 = new JLabel("Your Score - ");
+		while(true)
+		{
+		JLabel lblNewLabel_1 = new JLabel("Your Score - " + score);
 		lblNewLabel_1.setBounds(10, 100, 233, 25);
 		frame.getContentPane().add(lblNewLabel_1);
 		
-		JLabel lblNewLabel_2 = new JLabel("Brad Pitt Score - ");
+		JLabel lblNewLabel_2 = new JLabel("Brad Pitt Score - " + score);
 		lblNewLabel_2.setBounds(10, 136, 233, 25);
 		frame.getContentPane().add(lblNewLabel_2);
 		
-		JLabel lblNewLabel_3 = new JLabel("Will Smith Score - ");
+		JLabel lblNewLabel_3 = new JLabel("Will Smith Score - " + score);
 		lblNewLabel_3.setBounds(10, 172, 233, 25);
 		frame.getContentPane().add(lblNewLabel_3);
 		
-		JLabel lblNewLabel_4 = new JLabel("Jhonny Depp Score - ");
+		if(team==3) {break;}
+		
+		JLabel lblNewLabel_4 = new JLabel("Jhonny Depp Score - " + score);
 		lblNewLabel_4.setBounds(10, 208, 233, 25);
 		frame.getContentPane().add(lblNewLabel_4);
 		
-		JLabel lblNewLabel_5 = new JLabel("Matt Damon Score - ");
+		if(team==4) {break;}
+		
+		JLabel lblNewLabel_5 = new JLabel("Matt Damon Score - " + score);
 		lblNewLabel_5.setBounds(10, 244, 233, 25);
 		frame.getContentPane().add(lblNewLabel_5);
 		
-		JLabel lblNewLabel_6 = new JLabel("Tom Cruise Score - ");
+		if(team==5) {break;}
+		
+		JLabel lblNewLabel_6 = new JLabel("Tom Cruise Score - " + score);
 		lblNewLabel_6.setBounds(10, 280, 233, 25);
 		frame.getContentPane().add(lblNewLabel_6);
+		break;
+		}
 		
 		JButton btnBack = new JButton("BACK");
 		btnBack.addActionListener(new ActionListener() {
